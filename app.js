@@ -65,6 +65,6 @@ app.post("/login", function(req, res) {
    });
 });
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log("Server has been started at port 3000");
 });
